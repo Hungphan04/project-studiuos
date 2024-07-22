@@ -112,6 +112,10 @@ a:hover{
     background-color: #232220;
 }
 
+.dark input{
+    color:white;
+    border:1px solid #232220;
+}
 .dark #switchButton {
     background: none;
     border: none;
@@ -398,3 +402,4 @@ a:hover{
     z-index:1;
     
 }
+/* video */

@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css">
+    <!-- pop up -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 </head>
 
 <body id="myBody">
@@ -322,7 +324,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
+        <div class="number__video">
+            <a href="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=1280" class="image-link">
+                <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=100" />
+            </a>
+        </div>
     </section>
     <!-- FEEDBACK -->
     <section class="feedback"></section>
@@ -360,6 +367,24 @@
      </script>
     <!-- Custom Js -->
      <script src="./java/java.js"></script>
+     <!-- pop up -->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+     <script src="magnific-popup/jquery.magnific-popup.js"></script>
+     <script>
+        $('.image-link').magnificPopup({
+            type: 'image',
+            mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+          
+            zoom: {
+              enabled: true, // By default it's false, so don't forget to enable it
+          
+              duration: 300, // duration of the effect, in milliseconds
+              easing: 'ease-in-out', // CSS transition easing function
+            }
+          
+          });
+     </script>
 </body>
 
 </html>
