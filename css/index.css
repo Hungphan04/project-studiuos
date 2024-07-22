@@ -109,7 +109,7 @@ a:hover{
 
 /* Dark Theme */
 .dark#myBody {
-    background-color: black;
+    background-color: #232220;
 }
 
 .dark #switchButton {
@@ -127,7 +127,7 @@ a:hover{
 }
 
 .dark input {
-    background-color: black;
+    background-color: #232220;
 }
 .dark h3{
     color:white;
@@ -139,16 +139,16 @@ a:hover{
     color:white;
 }
 .dark .studious{
-    background-color:black;
+    background-color:#232220;
 }
 .dark .intro__items{
-    background:black;
+    background:#232220;
 }
 .dark .time{
     color:white;
 }
 .dark .counter{
-    background:black;
+    background:#232220;
 }
 /* start carousel */
 .carousel {
