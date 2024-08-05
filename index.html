@@ -50,6 +50,15 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="overlay">
+                <button></button>
+                <ul class="overlay__title">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Blog Post</li>
+                </ul>
+            </div> -->
         </div>
     </header>
     <!-- CAROUSEL -->
@@ -326,9 +335,13 @@
                 </div>
         </div>
         <div class="number__video">
-            <a href="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=1280" class="image-link">
-                <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=100" />
-            </a>
+            <a href="#small-dialog" class="open-popup-link popup-with-zoom-anim">
+                <i class="fa-solid fa-play"></i>
+              </a>
+              
+              <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+              </div>
         </div>
     </section>
     <!-- FEEDBACK -->
@@ -372,18 +385,24 @@
 
      <script src="magnific-popup/jquery.magnific-popup.js"></script>
      <script>
-        $('.image-link').magnificPopup({
-            type: 'image',
-            mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+        $(document).ready(function () {
+            $(".popup-with-zoom-anim").magnificPopup({
+              type: "inline",
           
-            zoom: {
-              enabled: true, // By default it's false, so don't forget to enable it
+              fixedContentPos: false,
+              fixedBgPos: true,
           
-              duration: 300, // duration of the effect, in milliseconds
-              easing: 'ease-in-out', // CSS transition easing function
-            }
+              overflowY: "auto",
           
+              closeBtnInside: true,
+              preloader: false,
+          
+              midClick: true,
+              removalDelay: 300,
+              mainClass: "my-mfp-zoom-in"
+            });
           });
+          
      </script>
 </body>
 
